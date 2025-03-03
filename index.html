@@ -10,32 +10,38 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background: url('background.jpg') no-repeat center center fixed;
+            background: url('background.jpg') no-repeat center top fixed;
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header {
             background-color: rgba(51, 51, 51, 0.8);
             color: white;
             padding: 20px;
+            width: 100%;
         }
         section {
             margin: 20px;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            display: inline-block;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
+            width: 80%;
+            max-width: 600px;
         }
         footer {
             background-color: rgba(51, 51, 51, 0.8);
             color: white;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
             width: 100%;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -43,37 +49,32 @@
     <header>
         <h1>個人簡介</h1>
     </header>
-    <section class="container">
+    <section>
         <h2>關於我</h2>
-        <p>你好，我是 [劉宸宇]，這裡是我的個人網站。</p>
+        <img src="profile.jpg" alt="個人照片" class="profile-img">
+        <p>你好，我是 [你的名字]，這裡是我的個人網站。</p>
     </section>
-    <section class="container">
+    <section>
         <h2>Map</h2>
         <ul>
-            <li></li>
+            <li>HTML / CSS / JavaScript</li>
             <li>前端開發</li>
             <li>後端開發</li>
         </ul>
-        <h2>Map</h2>
+    </section>
+    <section>
+        <h2>food</h2>
         <ul>
-          
-        </ul>
-        <h2>Smile</h2>
-        <ul>
-        
+            <li>HTML / CSS / JavaScript</li>
+            <li>前端開發</li>
+            <li>後端開發</li>
         </ul>
     </section>
-    <section class="container">
-        <h2>聯絡方式</h2>
-        <p>Email: example@example.com</p>
+    <section>
+        <h2>Smile</h2>
     </section>
     <footer>
         &copy; 2025 [你的名字]
     </footer>
 </body>
 </html>
-
-
-           
-                       
- 
