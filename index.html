@@ -1,80 +1,103 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人簡介</title>
+    <title>劉宸宇的個人網站</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
-            background: url('background.jpg') no-repeat center top fixed;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: rgba(51, 51, 51, 0.8);
+            background-color: #333;
             color: white;
+            text-align: center;
             padding: 20px;
-            width: 100%;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
         }
         section {
-            margin: 20px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            text-align: center;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 800px;
             border-radius: 10px;
-            width: 80%;
-            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            background-color: rgba(51, 51, 51, 0.8);
-            color: white;
-            padding: 10px;
+        img {
             width: 100%;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-top: 10px;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>個人簡介</h1>
+        <h1>劉宸宇的個人網站</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#skills">技能與證照</a></li>
+                <li><a href="#experience">經歷</a></li>
+                <li><a href="#projects">專案作品</a></li>
+                <li><a href="#contact">聯絡方式</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
+    
+    <section id="about">
         <h2>關於我</h2>
-        <img src="profile.jpg" alt="個人照片" class="profile-img">
-        <p>你好，我是 [你的名字]，這裡是我的個人網站。</p>
+        <p>我是劉宇，目前就讀陽明交通大學財金所，對程式設計與金融領域有高度興趣...</p>
+        <img src="大頭貼.jpg" alt="關於我的圖片">
     </section>
-    <section>
-        <h2>Map</h2>
+    
+    <section id="skills">
+        <h2>技能與證照</h2>
         <ul>
-            <li>HTML / CSS / JavaScript</li>
-            <li>前端開發</li>
-            <li>後端開發</li>
+            <li>Python (TQC+ 認證)</li>
+            <li>R 語言</li>
+            <li>Java, Matlab</li>
+            <li>SQL, PHP, HTML, CSS</li>
         </ul>
+        <img src="skills.jpg" alt="技能圖片">
     </section>
-    <section>
-        <h2>food</h2>
-        <ul>
-            <li>HTML / CSS / JavaScript</li>
-            <li>前端開發</li>
-            <li>後端開發</li>
-        </ul>
+    
+    <section id="experience">
+        <h2>經歷</h2>
+        <p>2023.04 - 2023.08 | 英雄建團產學合作助理</p>
+        <p>協助建置成本預測系統，使用 R 語言進行數據分析與視覺化...</p>
+        <img src="experience.jpg" alt="經歷圖片">
     </section>
-    <section>
-        <h2>Smile</h2>
+    
+    <section id="projects">
+        <h2>專案作品</h2>
+        <p>建立成本預測模型，利用 ARIMA 進行時序分析...</p>
+        <img src="projects.jpg" alt="專案圖片">
     </section>
-    <footer>
-        &copy; 2025 [你的名字]
-    </footer>
+    
+    <section id="contact">
+        <h2>聯絡方式</h2>
+        <p>Email: ches970038@gmail.com</p>
+        <p>Phone: 0956072027</p>
+        <img src="contact.jpg" alt="聯絡圖片">
+    </section>
 </body>
 </html>
